@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Usuario</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-200 h-screen flex items-center justify-center">
+
+    <div class="bg-white p-8 rounded shadow-md w-96">
+        <h2 class="text-2xl font-bold mb-4">Registro de Usuario</h2>
+
+        <form action="#" method="post">
+            <div class="mb-4">
+                <label for="studentID" class="block text-gray-700 text-sm font-bold mb-2">Carnet Estudiantil</label>
+                <input type="text" id="studentID" name="studentID" class="w-full p-2 border rounded">
+            </div>
+
+            <div class="mb-4">
+                <label for="username" class="block text-gray-700 text-sm font-bold mb-2">Nombre de usuario</label>
+                <input type="text" id="username" name="username" class="w-full p-2 border rounded">
+            </div>
+
+            <div class="mb-4">
+                <label for="password" class="block text-gray-700 text-sm font-bold mb-2">Contraseña</label>
+                <input type="password" id="password" name="password" class="w-full p-2 border rounded">
+            </div>
+
+            <div class="mb-4">
+                <label for="confirmPassword" class="block text-gray-700 text-sm font-bold mb-2">Confirmar Contraseña</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" class="w-full p-2 border rounded">
+            </div>
+
+            <button type="submit" class="w-full bg-blue-500 text-white p-2 rounded">Registrarse</button>
+        </form>
+
+        <div class="mt-4">
+            <p class="text-sm">¿Ya tienes una cuenta? <a href="/login.html" class="text-blue-500">Inicia sesión</a></p>
+        </div>
+    </div>
+
+</body>
+</html>

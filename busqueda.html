@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área de Préstamo</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-200">
+
+    <div class="container mx-auto mt-8 p-4 bg-white rounded shadow-md max-w-md">
+
+        <h2 class="text-2xl font-bold mb-4">Área de Préstamo</h2>
+
+        <!-- Barra de búsqueda -->
+        <div class="mb-4 flex items-center">
+            <input type="text" placeholder="Buscar libros" class="w-full border rounded p-2">
+            <button class="ml-2 bg-blue-500 text-white px-4 py-2 rounded">Buscar</button>
+        </div>
+
+        <!-- Lista de libros y canasta -->
+        <div>
+            <!-- Lista de libros disponibles -->
+            <h3 class="text-lg font-bold mb-2">Libros Disponibles</h3>
+            <ul class="mb-4">
+                <li class="flex justify-between items-center border-b py-2">
+                    <span>Libro 1</span>
+                    <button class="text-blue-500 hover:underline">Agregar a la Canasta</button>
+                </li>
+                <li class="flex justify-between items-center border-b py-2">
+                    <span>Libro 2</span>
+                    <button class="text-blue-500 hover:underline">Agregar a la Canasta</button>
+                </li>
+                <!-- Agrega más libros según sea necesario -->
+            </ul>
+
+            <!-- Canasta de libros seleccionados -->
+            <h3 class="text-lg font-bold mb-2">Canasta de Préstamo</h3>
+            <ul>
+                <!-- Los libros seleccionados se mostrarán aquí -->
+            </ul>
+
+            <!-- Botón de realizar préstamo -->
+            <div class="flex justify-end">
+                <button class="bg-green-500 text-white px-4 py-2 rounded">Realizar Préstamo</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

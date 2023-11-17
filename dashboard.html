@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-200">
+
+    <!-- Header -->
+    <div class="bg-blue-500 text-white py-4">
+        <div class="container mx-auto flex items-center justify-between">
+            <div class="flex items-center">
+                <!-- Imagen del libro al lado del nombre de la librería -->
+                <img src="book-icon.png" alt="Libro Icon" class="h-8 w-auto mr-2">
+                <h1 class="text-2xl font-bold">Nombre de tu Librería</h1>
+            </div>
+            <!-- Botón para mostrar/ocultar opciones del sidebar -->
+            <button id="toggleSidebar" class="lg:hidden ml-2 focus:outline-none">
+                <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7">
+                    </path>
+                </svg>
+            </button>
+            <!-- Campo de búsqueda -->
+            <div class="flex items-center">
+                <input type="text" placeholder="Buscar libros" class="border rounded p-2 mr-2">
+                <button class="bg-white text-blue-500 px-4 py-2 rounded">Buscar</button>
+            </div>
+            <!-- Puedes agregar aquí más elementos, como botones adicionales -->
+        </div>
+    </div>
+
+    <!-- Sidebar -->
+    <div id="sidebar" class="w-1/4 bg-white p-4 hidden lg:block">
+        <h2 class="text-xl font-bold mb-4">Dashboard</h2>
+        <ul>
+            <li class="mb-2"><a href="#" class="text-blue-500 hover:underline">Préstamo</a></li>
+            <li class="mb-2"><a href="#" class="text-blue-500 hover:underline">Favoritos</a></li>
+            <li class="mb-2"><a href="#" class="text-blue-500 hover:underline">Configuraciones</a></li>
+        </ul>
+    </div>
+
+    <!-- Dashboard Content -->
+    <div class="container mx-auto mt-8 flex">
+        <!-- Main Content -->
+        <div class="w-3/4 bg-gray-100 p-4">
+            <!-- Contenido principal del dashboard -->
+            <h2 class="text-2xl font-bold mb-4">Bienvenido Usuario</h2>
+            <p>Aqui apareceran los libros que vayas a prestar...</p>
+
+            <button type="button"
+                class="inline-flex items-center px-5 py-2.5 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                Notificaciones  
+                <span
+                    class="inline-flex items-center justify-center w-4 h-4 ms-2 text-xs font-semibold text-blue-800 bg-blue-200 rounded-full">
+                    2
+                </span>
+            </button>
+
+
+        </div>
+    </div>
+
+    <script>
+        // JavaScript para mostrar/ocultar el sidebar al hacer clic en el botón
+        document.getElementById('toggleSidebar').addEventListener('click', function () {
+            document.getElementById('sidebar').classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+
+</html>
